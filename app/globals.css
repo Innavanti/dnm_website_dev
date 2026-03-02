@@ -1,8 +1,211 @@
 @import "tailwindcss";
 
+/* Colorimetría */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* NEUTRAL   */
+  --color-base: #ffffff;
+  --color-neutral-50: #f3f4f5;
+  --color-neutral-100: #d8dce0;
+  --color-neutral-200: #c6cbd1;
+  --color-neutral-300: #abb4bc;
+  --color-neutral-400: #9ba5af;
+  --color-neutral-500: #828f9b;
+  --color-neutral-600: #76828d;
+  --color-neutral-700: #5c666e;
+  --color-neutral-800: #484f55;
+  --color-neutral-900: #373c41;
+/* PRIMARY  */
+  --color-primary-50: #e8e8e8;
+  --color-primary-100: #b9b9b8;
+  --color-primary-200: #979796;
+  --color-primary-300: #686866;
+  --color-primary-400: #4a4a49;
+  --color-primary-500: #1d1d1b;
+  --color-primary-600: #1a1a19;
+  --color-primary-700: #151513;
+  --color-primary-800: #10100f;
+  --color-primary-900: #0c0c0b;
+  /* PRIMARY 1 */
+  --color-primary-1-50: #f5f0eb;
+  --color-primary-1-100: #e1d0c1;
+  --color-primary-1-200: #d3b9a3;
+  --color-primary-1-300: #bf9879;
+  --color-primary-1-400: #b2855f;
+  --color-primary-1-500: #9f6637;
+  --color-primary-1-600: #915d32;
+  --color-primary-1-700: #714827;
+  --color-primary-1-800: #57381e;
+  --color-primary-1-900: #432b17;
+  /* PRIMARY 2 */
+  --color-primary-2-50: #f8f6f0;
+  --color-primary-2-100: #e9e2d1;
+  --color-primary-2-200: #ded5ba;
+  --color-primary-2-300: #cfc19b;
+  --color-primary-2-400: #c5b588;
+  --color-primary-2-500: #b7a36a;
+  --color-primary-2-600: #a79460;
+  --color-primary-2-700: #82744b;
+  --color-primary-2-800: #655a3a;
+  --color-primary-2-900: #4d442d;
+/* SECONDARY  */
+  --color-secundary-1-50: #eaeaea;
+  --color-secundary-1-100: #bdbdbc;
+  --color-secundary-1-200: #9d9d9c;
+  --color-secundary-1-300: #70706f;
+  --color-secundary-1-400: #555553;
+  --color-secundary-1-500: #2a2a28;
+  --color-secundary-1-600: #262624;
+  --color-secundary-1-700: #1e1e1c;
+  --color-secundary-1-800: #171716;
+  --color-secundary-1-900: #121211;
+
+
+  --color-error-50: #f9ebec;
+  --color-error-100: #ebc1c5;
+  --color-error-200: #e2a3a9;
+  --color-error-300: #d57982;
+  --color-error-400: #cd5f69;
+  --color-error-500: #c03744;
+  --color-error-600: #af323e;
+  --color-error-700: #882730;
+  --color-error-800: #6a1e25;
+  --color-error-900: #51171d;
+
+  --color-info-50: #eaf4ff;
+  --color-info-100: #beddfd;
+  --color-info-200: #9fccfd;
+  --color-info-300: #73b5fc;
+  --color-info-400: #58a6fb;
+  --color-info-500: #2e90fa;
+  --color-info-600: #2a83e4;
+  --color-info-700: #2166b2;
+  --color-info-800: #194f8a;
+  --color-info-900: #133c69;
+
+  --color-success-50: #e8f7f5;
+  --color-success-100: #b6e7df;
+  --color-success-200: #93dbcf;
+  --color-success-300: #62cab9;
+  --color-success-400: #44c0ac;
+  --color-success-500: #15b097;
+  --color-success-600: #13a089;
+  --color-success-700: #0f7d6b;
+  --color-success-800: #0c6153;
+  --color-success-900: #094a3f;
+
+  --color-warning-50: #fdf6ec;
+  --color-warning-100: #f9e2c5;
+  --color-warning-200: #f7d4a9;
+  --color-warning-300: #f3c082;
+  --color-warning-400: #f1b46a;
+  --color-warning-500: #eda145;
+  --color-warning-600: #d8933f;
+  --color-warning-700: #a87231;
+  --color-warning-800: #825926;
+  --color-warning-900: #64441d;
+
+  --whatsapp-300: #ece5dd;
+  --whatsapp-400: #dcf8c6;
+  --whatsapp-500: #25d366;
+  --whatsapp-600: #128c7e;
+  --whatsapp-700: #075e54;
+}
+
+[data-theme="dark"] {
+  --color-base: #ffffff;
+
+  --color-neutral-50: #373c41;
+  --color-neutral-100: #484f55;
+  --color-neutral-200: #5c666e;
+  --color-neutral-300: #76828d;
+  --color-neutral-400: #9ba5af;
+  --color-neutral-500: #828f9b;
+  --color-neutral-600: #abb4bc;
+  --color-neutral-700: #c6cbd1;
+  --color-neutral-800: #d8dce0;
+  --color-neutral-900: #f3f4f5;
+
+  --color-primary-100: #eab7ba;
+  --color-primary-200: #e09599;
+  --color-primary-300: #d2646b;
+  --color-primary-400: #c9464e;
+  --color-primary-50: #f8e8e9;
+  --color-primary-500: #bc1822;
+  --color-primary-600: #ab161f;
+  --color-primary-700: #851118;
+  --color-primary-800: #670d13;
+  --color-primary-900: #4f0a0e;
+
+  --color-secundary-1-100: #c2c3c2;
+  --color-secundary-1-200: #a4a5a4;
+  --color-secundary-1-300: #7a7c7a;
+  --color-secundary-1-400: #616361;
+  --color-secundary-1-50: #ebeceb;
+  --color-secundary-1-500: #393c39;
+  --color-secundary-1-600: #343734;
+  --color-secundary-1-700: #282b28;
+  --color-secundary-1-800: #1f211f;
+  --color-secundary-1-900: #181918;
+  --color-secundary-2-100: #b0b0b0;
+  --color-secundary-2-200: #8a8a8a;
+  --color-secundary-2-300: #545454;
+  --color-secundary-2-400: #333333;
+  --color-secundary-2-50: #e6e6e6;
+  --color-secundary-2-500: #000000;
+  --color-secundary-2-600: #000000;
+  --color-secundary-2-700: #000000;
+  --color-secundary-2-800: #000000;
+  --color-secundary-2-900: #000000;
+
+  --color-error-100: #ebc1c5;
+  --color-error-200: #e2a3a9;
+  --color-error-300: #d57982;
+  --color-error-400: #cd5f69;
+  --color-error-50: #f9ebec;
+  --color-error-500: #c03744;
+  --color-error-600: #af323e;
+  --color-error-700: #882730;
+  --color-error-800: #6a1e25;
+  --color-error-900: #51171d;
+
+  --color-info-100: #beddfd;
+  --color-info-200: #9fccfd;
+  --color-info-300: #73b5fc;
+  --color-info-400: #58a6fb;
+  --color-info-50: #eaf4ff;
+  --color-info-500: #2e90fa;
+  --color-info-600: #2a83e4;
+  --color-info-700: #2166b2;
+  --color-info-800: #194f8a;
+  --color-info-900: #133c69;
+
+  --color-success-100: #b6e7df;
+  --color-success-200: #93dbcf;
+  --color-success-300: #62cab9;
+  --color-success-400: #44c0ac;
+  --color-success-50: #e8f7f5;
+  --color-success-500: #15b097;
+  --color-success-600: #13a089;
+  --color-success-700: #0f7d6b;
+  --color-success-800: #0c6153;
+  --color-success-900: #094a3f;
+
+  --color-warning-100: #f9e2c5;
+  --color-warning-200: #f7d4a9;
+  --color-warning-300: #f3c082;
+  --color-warning-400: #f1b46a;
+  --color-warning-50: #fdf6ec;
+  --color-warning-500: #eda145;
+  --color-warning-600: #d8933f;
+  --color-warning-700: #a87231;
+  --color-warning-800: #825926;
+  --color-warning-900: #64441d;
+
+  --whatsapp-300: #ece5dd;
+  --whatsapp-400: #dcf8c6;
+  --whatsapp-500: #25d366;
+  --whatsapp-600: #128c7e;
+  --whatsapp-700: #075e54;
 }
 
 @theme inline {
@@ -23,4 +226,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
 }
