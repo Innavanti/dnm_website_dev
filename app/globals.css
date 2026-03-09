@@ -6,64 +6,73 @@
   --color-form-background: #000;
 
   /* Neutral Group */
-  --color-neutral1-50: var(--color-neutral-50);
-  --color-neutral1-100: var(--color-neutral-100);
-  --color-neutral1-200: var(--color-neutral-200);
-  --color-neutral1-300: var(--color-neutral-300);
-  --color-neutral1-400: var(--color-neutral-400);
-  --color-neutral1-500: var(--color-neutral-500);
-  --color-neutral1-600: var(--color-neutral-600);
-  --color-neutral1-700: var(--color-neutral-700);
-  --color-neutral1-800: var(--color-neutral-800);
-  --color-neutral1-900: var(--color-neutral-900);
+  --color-neutral1-50: var(--color-neutral1-50);
+  --color-neutral1-100: var(--color-neutral1-100);
+  --color-neutral1-200: var(--color-neutral1-200);
+  --color-neutral1-300: var(--color-neutral1-300);
+  --color-neutral1-400: var(--color-neutral1-400);
+  --color-neutral1-500: var(--color-neutral1-500);
+  --color-neutral1-600: var(--color-neutral1-600);
+  --color-neutral1-700: var(--color-neutral1-700);
+  --color-neutral1-800: var(--color-neutral1-800);
+  --color-neutral1-900: var(--color-neutral1-900);
+
+  /* Neutral Group */
+  --color-neutral2-50: var(--color-neutral2-50);
+  --color-neutral2-100: var(--color-neutral2-100);
+  --color-neutral2-200: var(--color-neutral2-200);
+  --color-neutral2-300: var(--color-neutral2-300);
+  --color-neutral2-400: var(--color-neutral2-400);
+  --color-neutral2-500: var(--color-neutral2-500);
 
   /* Primary Group */
-  --color-primary-50: var(--color-primary-50);
-  --color-primary-100: var(--color-primary-100);
-  --color-primary-200: var(--color-primary-200);
-  --color-primary-300: var(--color-primary-300);
-  --color-primary-400: var(--color-primary-400);
-  --color-primary-500: var(--color-primary-500);
-  --color-primary-600: var(--color-primary-600);
-  --color-primary-700: var(--color-primary-700);
-  --color-primary-800: var(--color-primary-800);
-  --color-primary-900: var(--color-primary-900);
+  --color-primary1-50: var(--color-primary1-50);
+  --color-primary1-100: var(--color-primary1-100);
+  --color-primary1-200: var(--color-primary1-200);
+  --color-primary1-300: var(--color-primary1-300);
+  --color-primary1-400: var(--color-primary1-400);
+  --color-primary1-500: var(--color-primary1-500);
+  --color-primary1-600: var(--color-primary1-600);
+  --color-primary1-700: var(--color-primary1-700);
+  --color-primary1-800: var(--color-primary1-800);
+  --color-primary1-900: var(--color-primary1-900);
 
-  /* Primary 1 Group */
-  --color-primary1-50: var(--color-primary-1-50);
-  --color-primary1-100: var(--color-primary-1-100);
-  --color-primary1-200: var(--color-primary-1-200);
-  --color-primary1-300: var(--color-primary-1-300);
-  --color-primary1-400: var(--color-primary-1-400);
-  --color-primary1-500: var(--color-primary-1-500);
-  --color-primary1-600: var(--color-primary-1-600);
-  --color-primary1-700: var(--color-primary-1-700);
-  --color-primary1-800: var(--color-primary-1-800);
-  --color-primary1-900: var(--color-primary-1-900);
+  
 
   /* Primary 2 Group */
-  --color-primary2-50: var(--color-primary-2-50);
-  --color-primary2-100: var(--color-primary-2-100);
-  --color-primary2-200: var(--color-primary-2-200);
-  --color-primary2-300: var(--color-primary-2-300);
-  --color-primary2-400: var(--color-primary-2-400);
-  --color-primary2-500: var(--color-primary-2-500);
-  --color-primary2-600: var(--color-primary-2-600);
-  --color-primary2-700: var(--color-primary-2-700);
-  --color-primary2-800: var(--color-primary-2-800);
-  --color-primary2-900: var(--color-primary-2-900);
+  --color-primary2-50: var(--color-primary2-50);
+  --color-primary2-100: var(--color-primary2-100);
+  --color-primary2-200: var(--color-primary2-200);
+  --color-primary2-300: var(--color-primary2-300);
+  --color-primary2-400: var(--color-primary2-400);
+  --color-primary2-500: var(--color-primary2-500);
+  --color-primary2-600: var(--color-primary2-600);
+  --color-primary2-700: var(--color-primary2-700);
+  --color-primary2-800: var(--color-primary2-800);
+  --color-primary2-900: var(--color-primary2-900);
 
   /* Secondary 1 Group */
-  --color-secondary1-50: var(--color-secundary-1-50);
-  --color-secondary1-100: var(--color-secundary-1-100);
-  --color-secondary1-200: var(--color-secundary-1-200);
-  --color-secondary1-300: var(--color-secundary-1-300);
-  --color-secondary1-400: var(--color-secundary-1-400);
-  --color-secondary1-500: var(--color-secundary-1-500);
-  --color-secondary1-600: var(--color-secundary-1-600);
-  --color-secondary1-700: var(--color-secundary-1-700);
-  --color-secondary1-800: var(--color-secundary-1-800);
-  --color-secondary1-900: var(--color-secundary-1-900);
+  --color-secondary1-50: var(--color-secundary1-50);
+  --color-secondary1-100: var(--color-secundary1-100);
+  --color-secondary1-200: var(--color-secundary1-200);
+  --color-secondary1-300: var(--color-secundary1-300);
+  --color-secondary1-400: var(--color-secundary1-400);
+  --color-secondary1-500: var(--color-secundary1-500);
+  --color-secondary1-600: var(--color-secundary1-600);
+  --color-secondary1-700: var(--color-secundary1-700);
+  --color-secondary1-800: var(--color-secundary1-800);
+  --color-secondary1-900: var(--color-secundary1-900);
+  /* Secondary 2 Group */
+  --color-secondary1-50: var(--color-secundary2-50);
+  --color-secondary1-100: var(--color-secundary2-100);
+  --color-secondary1-200: var(--color-secundary2-200);
+  --color-secondary1-300: var(--color-secundary2-300);
+  --color-secondary1-400: var(--color-secundary2-400);
+  --color-secondary1-500: var(--color-secundary2-500);
+  --color-secondary1-600: var(--color-secundary2-600);
+  --color-secondary1-700: var(--color-secundary2-700);
+  --color-secondary1-800: var(--color-secundary2-800);
+  --color-secondary1-900: var(--color-secundary2-900);
 
   /* Feedback Colors */
   --color-error-50: var(--color-error-50);
@@ -99,83 +108,79 @@
     20%, 60% { opacity: .7; }
     80% { transform: rotate(180deg); opacity: 0; }
   }
-  /* Add other keyframes as needed here */
+
 }
 
-/* --- Variable Definitions --- */
 :root {
-  --background: #000;
-  --foreground: #1d1d1b;
-
-  --color-base: #ffffff;
-  --color-neutral-50: #f3f4f5;
-  --color-neutral-100: #d8dce0;
-  --color-neutral-200: #c6cbd1;
-  --color-neutral-300: #abb4bc;
-  --color-neutral-400: #9ba5af;
-  --color-neutral-500: #828f9b;
-  --color-neutral-600: #76828d;
-  --color-neutral-700: #5c666e;
-  --color-neutral-800: #484f55;
-  --color-neutral-900: #373c41;
-
-  /* PRIMARY  */
-  --color-primary-50: #e8e8e8;
-  --color-primary-100: #b9b9b8;
-  --color-primary-200: #979796;
-  --color-primary-300: #686866;
-  --color-primary-400: #4a4a49;
-  --color-primary-500: #1d1d1b;
-  --color-primary-600: #1a1a19;
-  --color-primary-700: #151513;
-  --color-primary-800: #10100f;
-  --color-primary-900: #0c0c0b;
-  /* PRIMARY 1 */
-  --color-primary-1-50: #f5f0eb;
-  --color-primary-1-100: #e1d0c1;
-  --color-primary-1-200: #d3b9a3;
-  --color-primary-1-300: #bf9879;
-  --color-primary-1-400: #b2855f;
-  --color-primary-1-500: #9f6637;
-  --color-primary-1-600: #915d32;
-  --color-primary-1-700: #714827;
-  --color-primary-1-800: #57381e;
-  --color-primary-1-900: #432b17;
-  /* PRIMARY 2 */
-  --color-primary-2-50: #f8f6f0;
-  --color-primary-2-100: #e9e2d1;
-  --color-primary-2-200: #ded5ba;
-  --color-primary-2-300: #cfc19b;
-  --color-primary-2-400: #c5b588;
-  --color-primary-2-500: #b7a36a;
-  --color-primary-2-600: #a79460;
-  --color-primary-2-700: #82744b;
-  --color-primary-2-800: #655a3a;
-  --color-primary-2-900: #4d442d;
-/* SECONDARY  */
-  --color-secundary-1-50: #eaeaea;
-  --color-secundary-1-100: #bdbdbc;
-  --color-secundary-1-200: #9d9d9c;
-  --color-secundary-1-300: #70706f;
-  --color-secundary-1-400: #555553;
-  --color-secundary-1-500: #2a2a28;
-  --color-secundary-1-600: #262624;
-  --color-secundary-1-700: #1e1e1c;
-  --color-secundary-1-800: #171716;
-  --color-secundary-1-900: #121211;
-
-  --color-primary-1-50: #f5f0eb;
-  --color-primary-1-500: #9f6637;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   
-  --color-primary-2-50: #f8f6f0;
-  --color-primary-2-500: #b7a36a;
+  --color-base: #121211;
+  /* neutral 1 */
+  --color-neutral1-50: #fefefe;
+  --color-neutral1-100: #fcfcfb;
+  --color-neutral1-200: #fafaf9;
+  --color-neutral1-300: #f8f8f7;
+  --color-neutral1-400: #f7f7f5;
+  --color-neutral1-500: #f5f5f3;
+  --color-neutral1-600: #dfdfdd;
+  --color-neutral1-700: #aeaead;
+  --color-neutral1-800: #878786;
+  --color-neutral1-900: #676766;
+  /* Neutral 2  */
+  --color-neutral2-50: #e6e6e6;
+  --color-neutral2-100: #b0b0b0;
+  --color-neutral2-200: #8a8a8a;
+  --color-neutral2-300: #545454;
+  --color-neutral2-400: #333333;
+  --color-neutral2-500: #000000;
 
-  --color-secundary-1-500: #2a2a28;
+  /* Primary 1 */
+  --colors-primary1-50: #e9e8e7;
+  --colors-primary1-100: #b9b7b6;
+  --colors-primary1-200: #989592;
+  --colors-primary1-300: #686460;
+  --colors-primary1-400: #4b4641;
+  --colors-primary1-500: #1e1812;
+  --colors-primary1-600: #1b1610;
+  --colors-primary1-700: #15110d;
+  --colors-primary1-800: #110d0a;
+  --colors-primary1-900: #0d0a08;
+  /* Primary 2 */
+  --color-primary2-50: #f9f0ea;
+  --color-primary2-100: #ecd0bd;
+  --color-primary2-200: #e3ba9d;
+  --color-primary2-300: #d79a71;
+  --color-primary2-400: #cf8655;
+  --color-primary2-500: #c3682b;
+  --color-primary2-600: #b15f27;
+  --color-primary2-700: #8a4a1f;
+  --color-primary2-800: #6b3918;
+  --color-primary2-900: #522c12;
 
-  --color-error-500: #c03744;
-  --color-success-500: #15b097;
-  --color-warning-500: #eda145;
-  --color-info-500: #2e90fa;
+  /* Secundary 1 */
+  --color-secundary1-50: #e7e7e7;
+  --color-secundary1-100: #b4b4b3;
+  --color-secundary1-200: #90908e;
+  --color-secundary1-300: #5d5d5b;
+  --color-secundary1-400: #3d3d3b;
+  --color-secundary1-500: #0d0d0a;
+  --color-secundary1-600: #0c0c09;
+  --color-secundary1-700: #090907;
+  --color-secundary1-800: #070706;
+  --color-secundary1-900: #050504;
+
+  /* Secundary 2 */
+  --color-secundary2-50: #fffdfb;
+  --color-secundary2-100: #fef8f2;
+  --color-secundary2-200: #fdf5ec;
+  --color-secundary2-300: #fcf0e4;
+  --color-secundary2-400: #fcedde;
+  --color-secundary2-500: #fbe9d6;
+  --color-secundary2-600: #e4d4c3;
+  --color-secundary2-700: #b2a598;
+  --color-secundary2-800: #8a8076;
+  --color-secundary2-900: #69625a;
 }
 
 [data-theme="dark"] {
@@ -183,8 +188,71 @@
   --foreground: #ededed;
   
   --color-base: #121211;
-  --color-primary-500: #bc1822; /* Note: Your dark primary is red! */
-  /* ... Include all other dark mode variables here ... */
+  /* neutral 1 */
+  --color-neutral1-50: #fefefe;
+  --color-neutral1-100: #fcfcfb;
+  --color-neutral1-200: #fafaf9;
+  --color-neutral1-300: #f8f8f7;
+  --color-neutral1-400: #f7f7f5;
+  --color-neutral1-500: #f5f5f3;
+  --color-neutral1-600: #dfdfdd;
+  --color-neutral1-700: #aeaead;
+  --color-neutral1-800: #878786;
+  --color-neutral1-900: #676766;
+  /* Neutral 2  */
+  --color-neutral2-50: #e6e6e6;
+  --color-neutral2-100: #b0b0b0;
+  --color-neutral2-200: #8a8a8a;
+  --color-neutral2-300: #545454;
+  --color-neutral2-400: #333333;
+  --color-neutral2-500: #000000;
+
+  /* Primary 1 */
+  --color-primary1-50: #e9e8e7;
+  --color-primary1-100: #b9b7b6;
+  --color-primary1-200: #989592;
+  --color-primary1-300: #686460;
+  --color-primary1-400: #4b4641;
+  --color-primary1-500: #1e1812;
+  --color-primary1-600: #1b1610;
+  --color-primary1-700: #15110d;
+  --color-primary1-800: #110d0a;
+  --color-primary1-900: #0d0a08;
+  /* Primary 2 */
+  --color-primary2-50: #f9f0ea;
+  --color-primary2-100: #ecd0bd;
+  --color-primary2-200: #e3ba9d;
+  --color-primary2-300: #d79a71;
+  --color-primary2-400: #cf8655;
+  --color-primary2-500: #c3682b;
+  --color-primary2-600: #b15f27;
+  --color-primary2-700: #8a4a1f;
+  --color-primary2-800: #6b3918;
+  --color-primary2-900: #522c12;
+
+  /* Secundary 1 */
+  --color-secundary1-50: #e7e7e7;
+  --color-secundary1-100: #b4b4b3;
+  --color-secundary1-200: #90908e;
+  --color-secundary1-300: #5d5d5b;
+  --color-secundary1-400: #3d3d3b;
+  --color-secundary1-500: #0d0d0a;
+  --color-secundary1-600: #0c0c09;
+  --color-secundary1-700: #090907;
+  --color-secundary1-800: #070706;
+  --color-secundary1-900: #050504;
+
+  /* Secundary 2 */
+  --color-secundary2-50: #fffdfb;
+  --color-secundary2-100: #fef8f2;
+  --color-secundary2-200: #fdf5ec;
+  --color-secundary2-300: #fcf0e4;
+  --color-secundary2-400: #fcedde;
+  --color-secundary2-500: #fbe9d6;
+  --color-secundary2-600: #e4d4c3;
+  --color-secundary2-700: #b2a598;
+  --color-secundary2-800: #8a8076;
+  --color-secundary2-900: #69625a;
 }
 
 body {
@@ -192,3 +260,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+ /* -------------------- ANIMATIONS -------------------- */
+@keyframes HoverFrames 
+{
+    from { transform: translate(0%, 0%); }
+    to { transform: translate(0%, 2%); }
+}
+
+@keyframes OpacityFrames 
+{
+    from  { opacity: 0; }
+    to    { opacity: 1; }
+}
+
+
