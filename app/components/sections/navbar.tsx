@@ -14,10 +14,10 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <>
+    <div className="top-0 z-50 fixed w-full h-20">
       <NavbarMobile />
       <NavbarDesktop />
-    </>
+    </div>
   );
 };
 

@@ -17,7 +17,7 @@ export const Introduction = () => {
   ];
   return (
     <>
-      <section className="relative flex flex-col justify-around items-center bg-black px-5 py-20 w-full h-full">
+      <section className="relative flex flex-col justify-around items-center gap-10 bg-black px-5 py-20 w-full h-full">
         {/* ---------- Title ----------   */}
         <div className="flex flex-col gap-7 lg:mr-auto w-full lg:w-1/2 text-white">
           <p className="font-semibold text-5xl"> {t("title")}</p>
@@ -46,7 +46,7 @@ export const Introduction = () => {
         </div>
 
         {/* ----------  Quote ----------   */}
-        <div className="flex flex-col gap-5 w-full font-bold text-2xl lg:text-4xl">
+        <div className="flex flex-col gap-5 w-full lg:w-2/3 font-bold text-2xl lg:text-4xl">
           <p className="bg-clip-text bg-linear-to-r from-white to-white/10 w-fit text-transparent">
             {t(`quote1`)}
           </p>
