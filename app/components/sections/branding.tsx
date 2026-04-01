@@ -2,26 +2,30 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRightUp } from "../icons/icons";
+import image1 from "@/public/home/graphic1.png";
+import image2 from "@/public/home/graphic2.png";
 
 export const Branding = ({}: {}) => {
   const t = useTranslations("home.section_branding");
+  const images = [image1, image2];
   return (
-    <section className="flex lg:flex-row flex-col lg:gap-5 py-10 lg:h-auto">
-      <div className="bg-white/20 mx-auto lg:mx-0 my-10 lg:my-0 w-3/4 lg:w-0.5 h-0.5 lg:h-auto" />
+    <section className="flex md:flex-row flex-col mx-auto px-0 md:px-5 lg:px-0 py-10 w-full lg:w-3/4 md:h-auto">
+      <div className="bg-white/20 mx-auto md:mx-3 my-10 md:my-0 w-3/4 md:w-0.5 h-0.5 md:h-auto" />
       {new Array(2).fill(null).map((_, index) => (
-        <div key={index} className="w-1/2">
+        <div key={index} className="flex md:flex-row flex-col w-full md:w-1/2">
           <BrandingSection
             title={t(`branding_titles.${index}`)}
             subtitle={t(`branding_subtitles.${index}`)}
             text={t(`branding_texts.${index}`)}
-            graphic={`home/graphic${index + 1}.svg`}
+            image={images[index]}
             link="/"
           />
-          <div className="bg-white/20 mx-auto lg:mx-0 my-10 lg:my-0 w-3/4 lg:w-0.5 h-0.5 lg:h-auto" />
+          {/* Bottom decorator (Mobile) */}
+          <div className="md:hidden bg-white/20 mx-auto my-10 w-3/4 h-0.5" />
+          {/* Vertical decorator (Desktop) */}
+          <div className="bg-white/20 mx-3 w-0.5 h-auto" />
         </div>
       ))}
-
-      <div className="bg-white/20 mx-auto lg:mx-0 my-10 lg:my-0 w-3/4 lg:w-0.5 h-0 lg:h-auto" />
     </section>
   );
 };
@@ -30,28 +34,28 @@ const BrandingSection = ({
   title,
   subtitle,
   text,
-  graphic,
+  image,
   link,
 }: {
   title: string;
   subtitle: string;
   text: string;
-  graphic: string;
+  image: any;
   link: string;
 }) => {
   const t = useTranslations("home.section_branding");
 
   return (
     <div className="relative flex flex-col justify-around items-center gap-14 px-5 py-10 w-full text-white">
-      <p className="lg:px-10 w-full text-primary2-500 text-3xl text-left">
+      <p className="md:px-10 w-full text-primary2-500 text-3xl text-left">
         {title}
       </p>
-      <p className="flex flex-col gap-6 lg:px-10">
+      <p className="flex flex-col gap-6 md:px-10">
         <span className="font-semibold text-lg">{subtitle}</span>
         <span className="opacity-60 text-xl">{text}</span>
       </p>
       <Image
-        src={graphic}
+        src={image}
         alt="isotipo.svg"
         height={200}
         width={200}
