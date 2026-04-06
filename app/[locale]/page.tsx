@@ -14,7 +14,7 @@ export default function Home() {
     <main className="relative justify-center items-center bg-black dark:bg-black font-sans">
       <Hero />
 
-      <div className="relative bg-black px-2 lg:px-40">
+      <div className="relative bg-black px-2 lg:px-40 overflow-hidden">
         <SectionSeparator />
         <Introduction />
         <Solutions />
