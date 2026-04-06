@@ -7,6 +7,7 @@ import { Method } from "../components/sections/method";
 import { AboutUs } from "../components/sections/aboutUs";
 import { StrategicCases } from "../components/sections/strategicCases";
 import { Footer } from "../components/sections/footer";
+import { ContactForm } from "../components/sections/contactForm";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Method />
         <AboutUs />
         <StrategicCases />
+        <ContactForm />
         <Footer />
       </div>
     </main>

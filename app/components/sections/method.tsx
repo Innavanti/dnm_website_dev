@@ -12,7 +12,6 @@ export const Method = () => {
     >
       <p className="flex flex-col items-center gap-5 m-auto px-5 w-full lg:w-2/3 text-white">
         {/* Como trabajamos  */}
-
         <span className="w-full text-primary2-500 text-xl md:text-2xl lg:text-3xl text-center">
           {t("title-prologue")}
         </span>

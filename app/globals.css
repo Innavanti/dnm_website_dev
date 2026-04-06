@@ -91,57 +91,6 @@
   --animate-left-scroll: infinite-scroll 15s linear infinite;
   --animate-upside-down: upsideDown .2s linear forwards;
 
-  @keyframes upsideDown {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(180deg);
-    }
-  }
-
-  @keyframes spotlight {
-    0% {
-      opacity: 0;
-      transform: translate(-72%, -62%) scale(0.5);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(-50%, -40%) scale(1);
-    }
-  }
-
-  @keyframes FadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes RadarRotation {
-
-    0%,
-    100% {
-      transform: rotate(0deg);
-      opacity: 0;
-    }
-
-    20%,
-    60% {
-      opacity: .7;
-    }
-
-    80% {
-      transform: rotate(180deg);
-      opacity: 0;
-    }
-  }
-
 }
 
 :root {
@@ -314,3 +263,57 @@ body {
     opacity: 1;
   }
 }
+
+@keyframes upsideDown {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes spotlight {
+    0% {
+      opacity: 0;
+      transform: translate(-72%, -62%) scale(0.5);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -40%) scale(1);
+    }
+  }
+
+  @keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes RadarRotation {
+
+    0%,
+    100% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+
+    20%,
+    60% {
+      opacity: .7;
+    }
+
+    80% {
+      transform: rotate(180deg);
+      opacity: 0;
+    }
+  }
+
+/* -------------------- FIGMA STYLES -------------------- */
+
