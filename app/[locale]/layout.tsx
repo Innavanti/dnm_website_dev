@@ -64,13 +64,19 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="overflow-x-hidden">
+      <head>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width= device-width, initial-scale=1.0"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black relative overflow-x-hidden`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}
-          {/* <Footer /> */}
         </NextIntlClientProvider>
       </body>
     </html>

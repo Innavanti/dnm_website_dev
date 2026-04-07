@@ -26,12 +26,9 @@ export const Hero = () => {
       <Modal isVisible={showModal} setIsVisible={setShowModal} />
       <div className="relative">
         {/* ACTUAL CONTENT  */}
-        <div
-          className="top-0 left-0 fixed px-5 lg:px-40 xl:px-80 w-screen"
-          style={{ height: "98vh" }}
-        >
+        <div className="top-0 left-0 fixed px-5 lg:px-40 xl:px-80 w-screen h-[98svh]">
           <section
-            className={`top-0 relative flex flex-col justify-around lg:justify-between items-center py-10 md:py-20 lg:pt-30 lg:pb-20 2xl:pb-20 xl:pb-14 w-full h-full `}
+            className={`top-0 relative flex flex-col justify-around  items-center py-10 md:py-20 lg:pt-30 lg:pb-20 2xl:pb-20 xl:pb-14 w-full h-full `}
           >
             {/* ---------- Glow Background ----------   */}
             <svg
@@ -204,7 +201,7 @@ export const Hero = () => {
           </section>
         </div>
         {/* FILLER  */}
-        <div className="relative" style={{ height: "98vh" }}></div>
+        <div className="relative h-[98svh]"></div>
       </div>
     </>
   );

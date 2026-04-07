@@ -8,22 +8,44 @@ import { AboutUs } from "../components/sections/aboutUs";
 import { StrategicCases } from "../components/sections/strategicCases";
 import { Footer } from "../components/sections/footer";
 import { ContactForm } from "../components/sections/contactForm";
+import { FooterGlow } from "../components/sections/footerGlow";
+import { CyberPunkMouse } from "../components/sections/CyberPMouseConcept";
 
 export default function Home() {
   return (
     <main className="relative justify-center items-center bg-black dark:bg-black font-sans">
       <Hero />
 
-      <div className="relative bg-black px-2 lg:px-40 overflow-hidden">
-        <SectionSeparator />
-        <Introduction />
-        <Solutions />
-        <Branding />
-        <Method />
-        <AboutUs />
-        <StrategicCases />
-        <ContactForm />
-        <Footer />
+      <div className="relative bg-black overflow-hidden">
+        <div className="px-2 lg:px-40">
+          <SectionSeparator />
+        </div>
+        <div className="px-2 lg:px-40">
+          <Introduction />
+        </div>
+        <div className="px-2 lg:px-40">
+          <Solutions />
+        </div>
+        <div className="px-2 lg:px-40">
+          <Branding />
+        </div>
+        <div className="px-2 lg:px-40">
+          <Method />
+        </div>
+        <div className="px-2 lg:px-40">
+          <AboutUs />
+        </div>
+        <div className="px-2 lg:px-40">
+          <StrategicCases />
+        </div>
+        <div className="px-2 lg:px-40">
+          <ContactForm />
+        </div>
+        <div className="px-2 lg:px-40">
+          <Footer />
+        </div>
+        <CyberPunkMouse />
+        <FooterGlow />
       </div>
     </main>
   );
