@@ -9,7 +9,8 @@ import { StrategicCases } from "../components/sections/strategicCases";
 import { Footer } from "../components/sections/footer";
 import { ContactForm } from "../components/sections/contactForm";
 import { FooterGlow } from "../components/sections/footerGlow";
-import { CyberPunkMouse } from "../components/sections/CyberPMouseConcept";
+import { MouseTrail } from "../components/sections/MouseTrailConcept";
+import { MouseStalker } from "../components/sections/MouseStalkerConcept";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       <Hero />
 
       <div className="relative bg-black overflow-hidden">
+        {/* <MouseTrail /> */}
+        {/* <MouseStalker /> */}
+
         <div className="px-2 lg:px-40">
           <SectionSeparator />
         </div>
@@ -44,7 +48,6 @@ export default function Home() {
         <div className="px-2 lg:px-40">
           <Footer />
         </div>
-        <CyberPunkMouse />
         <FooterGlow />
       </div>
     </main>
