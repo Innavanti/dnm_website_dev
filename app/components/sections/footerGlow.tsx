@@ -9,6 +9,7 @@ export const FooterGlow = () => {
 
   // Pass the ref to the hook to get relative coordinates
   const { screen, document: doc, element } = useMousePosition(containerRef);
+  const outOfBoundsOpacity = 1 + element.y * 0.01;
 
   return (
     <section
@@ -39,11 +40,11 @@ export const FooterGlow = () => {
           fill="url(#footerGlow)"
           className="transition-all duration-500 ease-out"
           opacity={
-            1 + element.y * 0.01 > 1 // Clamp the value between 0 and 1
+            outOfBoundsOpacity > 1 // Clamp the value between 0 and 1
               ? 1
-              : 1 + element.y * 0.01 < 0
+              : outOfBoundsOpacity < 0
                 ? 0
-                : 1 + element.y * 0.01 // while within 0<y<1 range, reduce the opacity as the mouse goes into negative Y
+                : outOfBoundsOpacity // while within 0<y<1 range, reduce the opacity as the mouse goes into negative Y
           }
         />
 
@@ -109,14 +110,8 @@ export const FooterGlow = () => {
             Relative to Document: {doc.x}px, {doc.y}px
           </p>
           <p></p>
-          <p>Opacity Formula: 1 - {element.y * 0.1} = </p>
-          <p>
-            {1 + element.y * 0.1 > 1
-              ? 1
-              : 1 + element.y * 0.1 < 0
-                ? 0
-                : 1 + element.y * 0.1}
-          </p>
+          <p>Opacity Formula: = </p>
+          <p>{outOfBoundsOpacity}</p>
         </div>
       )}
     </section>

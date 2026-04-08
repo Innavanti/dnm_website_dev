@@ -35,7 +35,6 @@ export const MouseTrail = () => {
 
       // 1. Only spawn if the mouse has moved a minimum threshold (e.g., 2px)
       if (distance > 10) {
-        console.log("Spawning");
         const newGhost: Ghost = {
           id: Math.random().toString(36).substring(2, 9),
           x: mousePos.current.x,
@@ -74,11 +73,11 @@ export const MouseTrail = () => {
   return (
     <section
       ref={containerRef}
-      className="relative bg-black w-full h-screen overflow-hidden cursor-none"
+      className="z-50 relative bg-black w-full h-1 overflow-visible cursor-none"
     >
-      <svg className="absolute inset-0 w-full h-full pointer-events-none">
+      <svg className="w-full h-full overflow-visible pointer-events-none">
         {ghosts.map((ghost) => (
-          <GhostCursor key={ghost.id} ghost={ghost} />
+          <GhostCursor key={ghost.id} ghost={ghost} id={ghost.id} />
         ))}
         <path
           fill="white"
@@ -92,7 +91,7 @@ export const MouseTrail = () => {
   );
 };
 
-const GhostCursor = ({ ghost }: { ghost: Ghost }) => {
+const GhostCursor = ({ ghost, id }: { ghost: Ghost; id: string }) => {
   const [fill, setFill] = useState("#4bff21"); // Start Green
 
   useEffect(() => {
@@ -102,7 +101,7 @@ const GhostCursor = ({ ghost }: { ghost: Ghost }) => {
     // Transition to Blue after 100ms
     const timer1 = setTimeout(() => {
       setFill("#00f0ffff");
-    }, 300);
+    }, 50);
 
     // Transition to Purple after 200ms
     const timer2 = setTimeout(() => {
@@ -139,32 +138,6 @@ const GhostCursor = ({ ghost }: { ghost: Ghost }) => {
     </g>
   );
 };
-
-const CursorSVG = ({
-  x,
-  y,
-  fill,
-  opacity,
-}: {
-  x: number;
-  y: number;
-  fill: string;
-  opacity: number;
-}) => (
-  <path
-    fill={fill}
-    fillOpacity={opacity}
-    stroke="#0005"
-    strokeWidth={1}
-    className="duration-1000"
-    strokeOpacity={opacity * 0.5}
-    style={{
-      transform: `translate(${x}px, ${y}px)`,
-      transition: "transform 0.1s linear",
-    }}
-    d="M29.3808,23.959 l-8.2841-8.2878l6.0437-3.4929c0.354-0.2047,0.5601-0.5936,0.5306-1.0015c-0.0295-0.408-0.2894-0.7632-0.6692-0.9146 L0,0 l10.1813,25.5434 c0.1515,0.3801,0.5066,0.6401,0.9147,0.6696 c0.4081,0.0301,0.7972-0.1766,1.0017-0.5309l3.4904-6.0449l8.2835,8.2868 c0.2002,0.2004,0.4719,0.3129,0.7551,0.3129c0.2833,0,0.555-0.1126,0.7553-0.3129l3.9162-3.9186 C29.7976,25.0516,29.7976,24.3758,29.3808,23.959z"
-  />
-);
 
 interface MousePosition {
   screen: { x: number; y: number };

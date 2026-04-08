@@ -45,10 +45,12 @@ export default function Home() {
         <div className="px-2 lg:px-40">
           <ContactForm />
         </div>
-        <div className="px-2 lg:px-40">
+        {/* <div className="px-2 lg:px-40">
           <Footer />
-        </div>
+        </div> */}
         <FooterGlow />
+
+        <div></div>
       </div>
     </main>
   );
