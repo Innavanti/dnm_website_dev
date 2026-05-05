@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { Whatsapp } from "../icons/icons";
+import { WhatsApp } from "../icons/icons";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 // Assets
@@ -34,7 +34,7 @@ const NavbarMobile = () => {
     setShowSubMenu(false);
   };
   return (
-    <header className="left-0 lg:hidden z-10 absolute flex flex-row justify-between px-6 py-7 w-full text-white text-lg">
+    <header className="lg:hidden left-0 z-10 absolute flex flex-row justify-between px-6 py-7 w-full text-white text-lg">
       {/* Icon  */}
       <Image
         src={isotipo}
@@ -233,7 +233,7 @@ const NavbarDesktop = () => {
   };
 
   return (
-    <header className="left-0 hidden z-10 absolute lg:flex flex-row justify-between px-6 lg:px-10 py-7 lg:py-2 2xl:py-4 w-full text-white 2xl:text-md text-lg">
+    <header className="hidden left-0 z-10 absolute lg:flex flex-row justify-between px-[100px] py-7 lg:py-2 2xl:py-4 w-full text-white 2xl:text-md text-lg">
       {/* -------------------- {left-side menu here} -------------------- */}
       {/* Icon  */}
       <div className="flex flex-row lg:gap-5 text-white">

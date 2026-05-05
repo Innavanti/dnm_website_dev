@@ -64,7 +64,7 @@ export const SectionSeparator = () => {
       </svg>
       {/* GLOW  */}
       <svg
-        className="z-50 w-full h-96 object-fill overflow-hidden"
+        className="z-50 w-full h-screen object-fill overflow-hidden"
         ref={sectionRef}
       >
         <defs>

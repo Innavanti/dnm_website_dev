@@ -62,19 +62,21 @@
       "btn_explore": "EXPLORE DNM"
     },
     "section_introduction": {
-      "title": "TOOLS DO NOT DIRECT",
-      "paragraph1": "Today there are more tools, platforms, and artificial intelligence than ever that never stop creating brands.",
-      "paragraph2": "But most continue to make decisions without a clear strategic direction.",
-      "bullet_point1": "Design without strategy",
-      "bullet_point2": "Marketing without positioning",
-      "bullet_point3": "Growth without structure",
-      "quote1": "Direction is not designed.",
-      "quote2": "It is defined."
+      "title": ["Your ", "decisions ", "direct the brand"],
+      "paragraph1": "Today, creating a brand is more accesible than ever. Tools, platforms, and artificial intelligence make it possible.",
+      "paragraph2": "A good brand is built from the right decisions.",
+      "bullet_points": [
+        "Strategy-guided design",
+        "Position-ordered marketing",
+        "Structure-supported growth"
+      ],
+      "quote1": "A decision first.",
+      "quote2": ["Then, the ", "brand."]
     },
     "section_solutions": {
       "title-prologue": "STRATEGIC SOLUTIONS",
-      "title": "FOR LEADERS AND GROWING COMPANIES",
-      "title-paragraph": "Strategy is not the same for everyone. We define strategic solutions according to the type of decision your brand must make."
+      "title": ["FOR ", "LEADERS ", "& GROWING ", "COMPANIES", ""],
+      "title-paragraph": "Each brand faces different decisions. We define strategic solutions according to the time and direction that your brand needs."
     },
     "section_branding": {
       "branding_titles": ["PERSONAL BRANDING", "BUSINESS BRANDING"],
@@ -90,10 +92,9 @@
     },
     "section_method": {
       "title-prologue": "HOW WE WORK",
-      "title": "THIS IS HOW WE STRUCTURE BRAND DIRECTION",
-      "intro1": "Most brands start with design or marketing.",
-      "intro2": "At DNM we start with consulting and strategy.",
-      "subtitle": "Our method organizes brand direction into four strategic phases.",
+      "title": ["THIS IS HOW WE STRUCTURE ", "BRAND DIRECTION"],
+      "intro1": "At DNM, brand direction starts with consulting and strategy.",
+      "intro2": "Each decision has an order. Each phase has a purpose.",
       "step_titles": ["Diagnosis", "Strategy", "Materialization", "Direction"],
       "step_paragraphs": [
         "We analyze your brand, context, and current decisions to understand what it really needs.",
@@ -103,49 +104,62 @@
       ]
     },
     "section_about_us": {
-      "title": "WITHOUT STRATEGY, THE BRAND HAS NO DIRECTION",
-      "subtitle": "WHO ARE WE?",
+      "title": [
+        "BEHIND EACH BRAND THAT WORKS, THERE IS A ",
+        "STRATEGIC DECISION."
+      ],
       "btn": "MEET DNM"
     },
-    "section_estrategic_causes": {
+
+    "section_estrategic_cases": {
       "title_prologue": "Strategic Cases",
-      "title": "WHEN STRATEGY DEFINES DIRECTION",
-      "subtitle1": "Strategy is not demonstrated with speech",
-      "subtitle2": "It is demonstrated with decisions.",
+      "title": ["WHEN ", "STRATEGY ", "DEFINES DIRECTION"],
+      "subtitle": ["Strategy is demonstrated with ", "decisions."],
       "text": "These cases show how strategic direction transforms brands in practice.",
       "view_all": "View all cases",
-      "cases_subtitles": [
-        "Industrial parks",
-        "High-ranking official, businessman & builder of modern Mexico",
-        "Construction | Design | Development",
-        "Relevant architect in contemporary Mexican architecture"
-      ],
-      "cases_descriptions": [
-        "Brand architecture for industrial expansion",
-        "Strategic positioning for public leadership",
-        "Brand structure for architectural development.",
-        "Brand direction for leadership in architecture"
-      ],
-      "architect": "Architect",
-      "personal_branding": "Personal Branding",
-      "business_branding": "Business Branding",
-      "explore": "Explore case",
-      "prev": "Previous",
-      "next": "Next"
+      "carousel_cards": {
+        "personal_branding": "Personal Branding",
+        "business_branding": "Business Branding",
+        "architect": "Architect",
+        "cards_intros": [
+          "Construction of an industrial brand with regional presence and global class positioning.",
+          "High level identity for a influence and national leadership profile.",
+          "Technical identity evolution to a brand of self design and own authorship.",
+          "Legacy and innovation integration for the architect market leadership"
+        ],
+        "card_subtitles": [
+          "Industrial parks",
+          "Business leadership",
+          "Architecture & design",
+          "Residential architecture"
+        ],
+        "card_descriptions": [
+          "From regional operator to industrial class world referent.",
+          "Strategic positioning for national influence.",
+          "Technical identity evolution to own brand authorship.",
+          "Personal brand for the sector referent."
+        ],
+        "explore": "Explore case",
+        "prev": "Previous",
+        "next": "Next"
+      }
     },
+
     "section_target": {
-      "title": "For leaders and companies that  need direction for their brand"
+      "title": ["What you are deserves to ", "bee seen"],
+      "subtitle": "We build the brand that reflects your true level"
     },
     "section_contact": {
-      "title": "Let's talk about the direction of your brand",
-      "subtitle": "Share some details about your brand and we will evaluate how we can help you",
+      "title": ["Let's talk about the ", "direction ", "of your brand"],
+      "subtitle": "Share the context of your brand. We will define if there is a strategic path to work together",
+      "socials": "You can also write us by:",
       "channels": "Other contact channels",
       "form_labels": {
-        "name": "Name *",
-        "business_name": "Company *",
-        "email": "Email *",
-        "brand_stage": "Brand stage *",
-        "challenge": "What strategic challenge are you facing?"
+        "name": "Name",
+        "business_name": "Company / Project",
+        "email": "Email",
+        "brand_stage": "Brand stage",
+        "challenge": "Tell us a bit about your brand challenge..."
       },
       "form_placeholders": {
         "name": "Your full name",
@@ -161,10 +175,10 @@
         ],
         "challenge": "Describe your project or business need"
       },
-      "form_button": "Contact"
+      "form_button": "Start conversation"
     },
     "section_footer": {
-      "text": "© 2026 DNM. All rights reserved."
+      "text": "All rights reserved."
     }
   }
 }

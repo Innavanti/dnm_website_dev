@@ -1,82 +1,65 @@
 "use client";
-import Image from "next/image";
-import { ArrowRightDown } from "../icons/icons";
 import { useTranslations } from "next-intl";
+import { useEffect, useRef, useState } from "react";
 
 export const Footer = () => {
-  const t = useTranslations("home.section_target");
+  const [visiblePercentage, setVisiblePercentage] = useState(0);
+  const footerRef = useRef(null);
+  const currentYear = new Date().getFullYear();
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setVisiblePercentage(entry.intersectionRatio * 100);
+      },
+      {
+        threshold: Array.from({ length: 101 }, (_, i) => i / 100),
+      },
+    );
+
+    if (footerRef.current) observer.observe(footerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const t = useTranslations("home.section_footer");
   return (
-    <section
-      className={` relative flex overflow-visible flex-col justify-around lg:justify-between items-center py-20 md:py-40 w-full h-full `}
-    >
-      {/* ---------- Glow Background ----------   */}
+    <div className="z-0 relative bg-black py-10 w-full overflow-visible">
+      {/* GLOW  */}
       <svg
-        className="top-0 left-0 z-0 absolute w-screen h-full object-fill overflow-visible"
-        stroke="white"
-        strokeWidth={0}
+        className="top-0 z-50 absolute w-full h-full object-fill overflow-visible"
+        ref={footerRef}
       >
         <defs>
           <radialGradient
-            id="footerGlow"
+            id="radialGlowIntro"
             cx="50%"
-            cy="50%"
+            cy="30%"
             r="50%"
             fx="50%"
             fy="50%"
           >
-            <stop offset="0%" stopColor="#f9f0ea" stopOpacity=".7" />
-            <stop
-              offset="40%"
-              stopColor="var(--color-primary2-500)"
-              stopOpacity="0.5"
-            />
+            <stop offset="0%" stopColor="white" stopOpacity=".4" />
+            <stop offset="50%" stopColor="#9f6637" stopOpacity="0.5" />
             <stop offset="100%" stopColor="transparent" stopOpacity="0.5" />
           </radialGradient>
         </defs>
 
-        <circle
+        <ellipse
           cx="50%"
-          cy="50%"
-          r="75%"
-          fill="url(#footerGlow)"
-          opacity={0.5}
+          cy="100%"
+          ry={"200%"}
+          rx={`${visiblePercentage >= 10 ? visiblePercentage - 10 : 0}%`} // ternary used to prevent radius from going into negative values
+          fill="url(#radialGlowIntro)"
+          opacity={0.8}
           stroke="white"
-          className="md:hidden"
-        />
-        <circle
-          cx="50%"
-          cy="50%"
-          r="50%"
-          fill="url(#footerGlow)"
-          opacity={0.5}
-          className="hidden lg:hidden md:block"
-          stroke="white"
-        />
-        <circle
-          cx="50%"
-          cy="50%"
-          r="35%"
-          fill="url(#footerGlow)"
-          opacity={0.5}
-          className="hidden lg:block"
-          stroke="white"
+          strokeWidth={0}
         />
       </svg>
 
-      {/* ---------- Hero Title ----------   */}
-      <div className="flex flex-col gap-3 md:gap-5 w-full">
-        <Image
-          src="/branding/isotipo.svg"
-          alt="isotipo.svg"
-          height={200}
-          width={200}
-          className="mx-auto w-15 md:w-20 h-auto object-contain"
-        />
-        <p className="mx-auto w-full md:w-2/3 text-white text-lg md:text-3xl xl:text-4xl 2xl:text-5xl text-center">
-          {t("title")}
-        </p>
-      </div>
-    </section>
+      <p className="w-full text-center">
+        &copy; {currentYear} DNM. {t("text")}
+      </p>
+    </div>
   );
 };

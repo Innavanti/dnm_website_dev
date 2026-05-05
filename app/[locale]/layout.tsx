@@ -72,7 +72,7 @@ export default async function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black relative overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black relative overflow-x-hidden `}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />

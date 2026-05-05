@@ -17,10 +17,7 @@
       "options": {
         "aboutUs": "Nosotros",
         "solutions": "Soluciones",
-        "solutionsList": [
-          "Marca Personal",
-          "Marca Empresarial"
-        ],
+        "solutionsList": ["Marca Personal", "Marca Empresarial"],
         "cases": "Casos",
         "method": "Método",
         "contact": "Contacto"
@@ -39,10 +36,7 @@
         "Ahora necesita dirección.",
         "Tu marca debe sostenerlo."
       ],
-      "sections_description1": [
-        "MARCA PERSONAL",
-        "MARCA EMPRESARIAL"
-      ],
+      "sections_description1": ["MARCA PERSONAL", "MARCA EMPRESARIAL"],
       "sections_description2": [
         "para lideres y comunicadores",
         "para negocios y empresas"
@@ -70,25 +64,24 @@
       "btn_explore": "EXPLORAR DNM"
     },
     "section_introduction": {
-      "title": "LAS HERRAMIENTAS NO DIRIGEN",
-      "paragraph1": "Hoy existen más herramientas, plataformas e inteligencia artificial que nunca paran de crear marcas.",
-      "paragraph2": "Pero la mayoría sigue tomando decisiones sin una dirección estratégica clara.",
-      "bullet_point1": "Diseño sin estrategia",
-      "bullet_point2": "Marketing sin posicionamiento",
-      "bullet_point3": "Crecimiento sin estructura",
-      "quote1": "La dirección no se diseña.",
-      "quote2": "Se define."
+      "title": ["Las ", "decisiones ", "dirigen la marca"],
+      "paragraph1": "Crear una marca hoy es más accesible que nunca. Herramientas, plataformas e inteligencia artificial lo hacen posible.",
+      "paragraph2": "Una marca con dirección se construye desde las decisiones correctas.",
+      "bullet_points": [
+        "Estrategia que guía el diseño",
+        "Posicionamiento que ordena el marketing",
+        "Estructura que sostiene el crecimiento"
+      ],
+      "quote1": "Primero la decisión.",
+      "quote2": ["Después la ", "marca."]
     },
     "section_solutions": {
       "title-prologue": "SOLUCIONES ESTRATÉGICAS",
-      "title": "PARA LÍDERES Y EMPRESAS EN CRECIMIENTO",
-      "title-paragraph": "La estrategia no es igual para todos. Definimos soluciones estratégicas según el tipo de decisión que tu marca debe tomar."
+      "title": ["PARA ", "LÍDERES ", "Y ", "EMPRESAS ", "EN CRECIMIENTO"],
+      "title-paragraph": "Cada marca enfrenta decisiones distintas. Definimos soluciones estratégicas según el momento y la dirección que tu marca necesita."
     },
     "section_branding": {
-      "branding_titles": [
-        "MARCA PERSONAL",
-        "MARCA EMPRESARIAL"
-      ],
+      "branding_titles": ["MARCA PERSONAL", "MARCA EMPRESARIAL"],
       "branding_subtitles": [
         "Para lideres que necesitan dirección, no exposición.",
         "Para empresas que necesitan estructura, no improvisación."
@@ -101,10 +94,9 @@
     },
     "section_method": {
       "title-prologue": "CÓMO TRABAJAMOS",
-      "title": "ASÍ ESTRUCTURAMOS LA DIRECCIÓN DE MARCA",
-      "intro1": "La mayoría de las marcas empieza por diseño o marketing.",
-      "intro2": "En DNM empezamos por consultoría y estrategia.",
-      "subtitle": "Nuestro método organiza la dirección de marca en cuatro fases estratégicas.",
+      "title": ["ASÍ ESTRUCTURAMOS LA", "DIRECCIÓN DE MARCA"],
+      "intro1": "En DNM, la dirección de marca empieza por consultoría y estrategia.",
+      "intro2": "Cada decision tiene un orden. Cada fase tiene un propósito.",
       "step_titles": [
         "Diagnóstico",
         "Estrategia",
@@ -119,48 +111,59 @@
       ]
     },
     "section_about_us": {
-      "title": "SIN ESTRATEGIA, LA MARCA NO TIENE DIRECCIÓN",
-      "subtitle": "¿QUIÉNES SOMOS?",
-      "btn": "CONOCER DNM"
+      "title": [
+        "DETRÁS DE CADA MARCA QUE FUNCIONA, HAY UNA ",
+        "DECISIÓN ESTRATÉGICA."
+      ],
+      "btn": "CONOCE A DNM"
     },
-    "section_estrategic_causes": {
+    "section_estrategic_cases": {
       "title_prologue": "Casos Estratégicos",
-      "title": "CUANDO LA ESTRATEGIA DEFINE LA DIRECCIÓN",
-      "subtitle1": "La estrategia no se demuestra con discurso",
-      "subtitle2": "Se demuestra con decisiones.",
+      "title": ["CUANDO LA ", "ESTRATEGIA ", "DEFINE LA DIRECCIÓN"],
+      "subtitle": ["La estrategia se demuestra con ", "decisiones."],
       "text": "Estos casos muestran cómo la dirección estratégica transforma marcas en la práctica.",
       "view_all": "Ver todos los casos",
-      "cases_subtitles": [
-        "Parques industriales",
-        "Alto funcionario, empresario & constructor del México moderno",
-        "Construcción | Diseño | Desarrollo ",
-        "Arquitecto relevante en la arquitectura contemporánea mexicana"
-      ],
-      "cases_descriptions": [
-        "Arquitectura de marca para expansión industrial",
-        "Posicionamiento estratégico para liderazgo público",
-        "Estructura de marca para desarrollo arquitectónico.",
-        "Dirección de marca para liderazgo en arquitectura"
-      ],
-      "architect": "Arquitecto",
-      "personal_branding": "Marca Personal",
-      "business_branding": "Marca Empresarial",
-      "explore": "Explorar caso",
-      "prev": "Anterior",
-      "next": "Siguiente"
+      "carousel_cards": {
+        "personal_branding": "Marca Personal",
+        "business_branding": "Marca Empresarial",
+        "architect": "Arquitecto",
+        "cards_intros": [
+          "Construcción de una marca industrial con presencia regional y posicionamiento de clase mundial.",
+          "Identidad de alto nivel para un perfil de influencia y liderazgo nacional.",
+          "Evolución de identidad técnica hacia una marca de diseño y autoría propia.",
+          "Integración de legado e innovación para el liderazgo del mercado arquitectónico."
+        ],
+        "card_subtitles": [
+          "Parques industriales",
+          "Liderazgo empresarial",
+          "Arquitectura y diseño",
+          "Arquitectura residencial"
+        ],
+        "card_descriptions": [
+          "De operador regional a referente industrial de clase mundial.",
+          "Posicionamiento estratégico para influencia nacional.",
+          "Evolución de identidad técnica a marca de autoría.",
+          "Marca personal para referente del sector."
+        ],
+        "explore": "Explorar caso",
+        "prev": "Anterior",
+        "next": "Siguiente"
+      }
     },
     "section_target": {
-      "title": "Para lideres y empresas que  necesitan dirección para su marca"
+      "title": ["Lo que eres merece ", "ser visto"],
+      "subtitle": "Construimos la marca que refleja tu verdadero nivel"
     },
     "section_contact": {
-      "title": "Hablemos sobre la dirección de tu marca",
-      "subtitle": "Comparte algunos detalles sobre tu marca y evaluaremos cómo podemos ayudarte",
+      "title": ["Hablemos sobre la ", "dirección ", "de tu marca"],
+      "subtitle": "Comparte el contexto de tu marca. Con esa información definimos si hay una ruta estratégica para trabajar juntos",
+      "socials": "También puedes escribirnos por:",
       "channels": "Otros canales de contacto",
       "form_labels": {
-        "name": "Nombre *",
-        "business_name": "Empresa *",
-        "email": "Correo *",
-        "brand_stage": "Etapa de tu marca *",
+        "name": "Nombre",
+        "business_name": "Empresa / Proyecto",
+        "email": "Correo",
+        "brand_stage": "Etapa de tu marca",
         "challenge": "¿Qué reto estratégico enfrentas?"
       },
       "form_placeholders": {
@@ -175,12 +178,12 @@
           "Consolidación",
           "Transformación | Reposicionamiento"
         ],
-        "challenge": "Describe tu proyecto o necesidad empresarial"
+        "challenge": "Cuéntanos brevemente tu reto de marca..."
       },
-      "form_button": "Contactar"
+      "form_button": "Iniciar conversación"
     },
     "section_footer": {
-      "text": "© 2026 DNM. Todos los derechos reservados."
+      "text": "Todos los derechos reservados."
     }
   }
 }
