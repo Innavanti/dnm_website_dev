@@ -93,7 +93,7 @@ const ContentDesktop = () => {
       </svg>
       {/* ------------------- Content ------------------- */}
       <div className="relative flex flex-col gap-5 md:gap-7 lg:gap-10 md:px-20 py-10 rounded-2xl w-full h-full">
-        <h2 className="relative w-full text-center">
+        <h2 className="relative p-3 w-full text-center">
           <span className=""> {t("title.0")} </span>
           <span className="text-primary2-500"> {t("title.1")} </span>
         </h2>
