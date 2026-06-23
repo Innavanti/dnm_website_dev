@@ -11,7 +11,7 @@ export const MediaQueryIndicator = () => {
       <p className="hidden 2xl:hidden xl:block bg-orange-500 px-5 py-2">
         XL: FHD
       </p>
-      <p className="hidden 2xl:block bg-red-500 px-5 py-2">2XL: 2K+</p>
+      <p className="hidden 2xl:block bg-purple-500 px-5 py-2">2XL: 2K+</p>
     </div>
   );
 };

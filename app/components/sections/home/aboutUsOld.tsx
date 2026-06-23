@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
-import { Button } from "../button";
+import { Button } from "../../button";
 
-export const AboutUs = () => {
+export const AboutUsOld = () => {
   return (
     <section id="section-about-us">
       <ContentDesktop />

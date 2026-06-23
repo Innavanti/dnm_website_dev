@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useRef } from "react";
-import { ArrowRightUp } from "../icons/icons";
+import { ArrowRightUp } from "../../icons/icons";
 
 export const StrategicCases = () => {
   const t = useTranslations("home.section_estrategic_causes");

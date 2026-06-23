@@ -1,51 +1,117 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useState } from "react";
-import { ArrowRightUp } from "../icons/icons";
+import { useEffect, useRef, useState } from "react";
+import { ArrowRightUp } from "../../icons/icons";
 
 export const StrategicCases = () => {
   const t = useTranslations("home.section_estrategic_cases");
 
+  // -------------------- Detect when element enters the screen --------------------
+  // Create a reference to link to the element in question
+  const sectionRef = useRef<HTMLDivElement>(null);
+  // Use a State hook to store the intersection status
+  const [isIntersected, setIsIntersected] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Trigger when 50% of the component is visible
+        if (entry.isIntersecting) {
+          setIsIntersected(true);
+          // Once it triggers, we can stop observing
+          if (sectionRef.current) observer.unobserve(sectionRef.current);
+        }
+      },
+      {
+        threshold: 0.5, // 50% visibility
+      },
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+  // -------------------------------------------------------------------------------
+
+  const AnimationParameters = {
+    transformOrigin: "50% 60%",
+    animation: "OpacityFrames linear",
+    animationDuration: "2s",
+    animationIterationCount: "1",
+    animationFillMode: "backwards",
+  };
+
   return (
     <section
-      className="flex flex-col gap-5 mx-auto py-10 mg:py-20 w-full overflow-hidden"
-      id="section-cases"
+      className="flex flex-col gap-5 lg:gap-8 mx-auto py-10 mg:py-20 w-full overflow-hidden"
+      ref={sectionRef}
     >
-      <div className="flex lg:flex-row flex-col justify-around items-center gap-5 m-auto px-5 w-full text-white">
+      {/* -------------------- Text content -------------------- */}
+      <div className="flex lg:flex-row flex-col justify-center items-center gap-5 m-auto px-5 w-full text-white">
         {/* ----- Title ----- */}
-        <div className="flex flex-col gap-2 lg:gap-5 lg:w-2/5 lg:text-left text-center">
-          <h1 className="text-center">{t("title_prologue")}</h1>
-          <h2 className="mx-auto w-3/4 lg:w-full text-center">
-            <span className="text-white">{t("title.0")}</span>
-            <span className="text-primary2-500">{t("title.1")}</span>
-            <span className="text-white">{t("title.2")}</span>
+        <div
+          className="flex flex-col gap-2 lg:gap-5 lg:w-2/5 text-left lg:text-left"
+          style={
+            isIntersected
+              ? { ...AnimationParameters, animationDelay: "0s" }
+              : { opacity: 0 } // Keep element hidden till animation triggers
+          }
+        >
+          <h1 className="">{t("title_prologue")}</h1>
+          <h2 className="mx-auto w-3/4 lg:w-full">
+            <span className="text-primary2-500">{t("title.0")}</span>
+            <span className="text-white">{t("title.1")}</span>
           </h2>
         </div>
         {/* ----- Paragraph ----- */}
-        <div className="flex flex-col gap-2 lg:gap-5 lg:w-2/5">
-          <p className="w-full text-lg">
+        <div
+          className="flex flex-col gap-2 lg:gap-5 lg:w-2/5"
+          style={
+            isIntersected
+              ? { ...AnimationParameters, animationDelay: "1s" }
+              : { opacity: 0 } // Keep element hidden till animation triggers
+          }
+        >
+          <p className="w-full text-neutral1-500 text-lg lg:text-2xl">
             <span className="">{t("subtitle.0")}</span>
             <span className="text-primary2-500">{t("subtitle.1")}</span>
+            <span className="">{t("subtitle.2")}</span>
           </p>
           <p className="w-full text-white/70">{t("text")}</p>
         </div>
       </div>
-      {/* ----- View all cases ----- */}
-      {/* <p className="flex flex-row items-center gap-3 xl:gap-5 m-auto px-5 w-full text-white">
-        <span className="ml-auto text-lg md:text-xl lg:text-xl text-right">
+      {/* -------------------- View all cases -------------------- */}
+      <p
+        className="group flex flex-row items-center gap-3 xl:gap-3 hover:bg-slate-200/10 ml-auto px-5 rounded text-white duration-500 cursor-pointer"
+        style={
+          isIntersected
+            ? { ...AnimationParameters, animationDelay: "2s" }
+            : { opacity: 0 } // Keep element hidden till animation triggers
+        }
+      >
+        <span className="ml-auto group-hover:text-primary2-500 text-lg md:text-xl lg:text-xl text-right duration-500">
           {t("view_all")}
         </span>
         <ArrowRightUp
-          className="my-auto border w-7 lg:w-6 h-7 lg:h-6"
+          className="my-auto w-4 h-4 group-hover:-translate-y-1 group-hover:translate-x-1 duration-500"
           color="var(--color-primary2-500)"
         />
-      </p> */}
+      </p>
 
-      {/* Carousel  */}
-      <CarouselMobile />
-      <CarouselTablet />
-      <CarouselDesktop />
+      {/* -------------------- Carousel -------------------- */}
+      <div
+        style={
+          isIntersected
+            ? { ...AnimationParameters, animationDelay: "2.5s" }
+            : { opacity: 0 } // Keep element hidden till animation triggers
+        }
+      >
+        <CarouselMobile />
+        <CarouselTablet />
+        <CarouselDesktop />
+      </div>
     </section>
   );
 };
@@ -401,6 +467,7 @@ const CarouselCard = ({
   explore_text: string;
   link: string;
 }) => {
+  const [isSelected, setIsSelected] = useState(false);
   return (
     <div className="group relative w-full h-full overflow-hidden text-white align-middle">
       {/* -------------------- Background Image --------------------  */}
@@ -413,12 +480,12 @@ const CarouselCard = ({
         style={{ objectFit: "cover" }}
       />
       {/* -------------------- Cover --------------------  */}
-      <div className="top-0 relative group-hover:opacity-0 p-5 md:p-2 lg:p-5 h-full duration-500 pointer-events-none">
+      <div className="top-0 relative bg-linear-to-b from-black via-transparent to-transparent group-hover:opacity-0 p-5 md:p-2 lg:p-5 h-full duration-500 pointer-events-none">
         {/* Title | Logo  */}
-        <div className="flex flex-col p-2 w-full">
+        <div className="flex flex-col items-start w-full h-16">
           {title && (
-            <p className="flex flex-col gap-2 my-auto w-full h-12 md:text-md text-lg lg:text">
-              <span className="">{title}</span>
+            <p className="flex flex-col gap-2 w-full md:text-md text-lg lg:text">
+              <span className="font-bold">{title}</span>
             </p>
           )}
 
@@ -428,7 +495,7 @@ const CarouselCard = ({
               width={250}
               height={250}
               alt={`logo-${link}`}
-              className="mr-auto w-fit h-12"
+              className="mr-auto w-auto h-full"
             />
           )}
         </div>
@@ -438,10 +505,6 @@ const CarouselCard = ({
             <span>{intro}</span>
           </p>
         </div>
-        {/* Branding Category  */}
-        <p className="bottom-22 -left-16 absolute opacity-70 w-40 font-bold lg:text-[.6rem] text-xs uppercase -rotate-90">
-          <span>{branding_type}</span>
-        </p>
       </div>
 
       {/* -------------------- Hover Info --------------------  */}

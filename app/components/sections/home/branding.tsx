@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRightUp, Building, User } from "../icons/icons";
+import { ArrowRightUp, Building, User } from "../../icons/icons";
 import image1 from "@/public/home/graphic1.png";
 import image2 from "@/public/home/graphic2.png";
-import { Button } from "../button";
+import { Button } from "../../button";
 
 export const Branding = ({}: {}) => {
   const t = useTranslations("home.section_branding");

@@ -32,7 +32,7 @@ export const Footer = () => {
       >
         <defs>
           <radialGradient
-            id="radialGlowIntro"
+            id="radialGlowFooter"
             cx="50%"
             cy="30%"
             r="50%"
@@ -41,7 +41,7 @@ export const Footer = () => {
           >
             <stop offset="0%" stopColor="white" stopOpacity=".4" />
             <stop offset="50%" stopColor="#9f6637" stopOpacity="0.5" />
-            <stop offset="100%" stopColor="transparent" stopOpacity="0.5" />
+            <stop offset="70%" stopColor="#9f6637" stopOpacity="0.0" />
           </radialGradient>
         </defs>
 
@@ -50,7 +50,7 @@ export const Footer = () => {
           cy="100%"
           ry={"200%"}
           rx={`${visiblePercentage >= 10 ? visiblePercentage - 10 : 0}%`} // ternary used to prevent radius from going into negative values
-          fill="url(#radialGlowIntro)"
+          fill="url(#radialGlowFooter)"
           opacity={0.8}
           stroke="white"
           strokeWidth={0}
