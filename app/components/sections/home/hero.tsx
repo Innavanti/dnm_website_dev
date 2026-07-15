@@ -75,7 +75,7 @@ export const Hero = () => {
                 className="flex flex-col mt-20 lg:font-semibold text-white uppercase 2xl:leading-18 xl:leading-15"
                 style={{
                   ...AnimationA,
-                  animationDelay: "2s",
+                  animationDelay: "1.5s",
                 }}
               >
                 <span className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
@@ -91,7 +91,7 @@ export const Hero = () => {
                 className="flex flex-col gap-4 mt-3 w-full"
                 style={{
                   ...AnimationA,
-                  animationDelay: "3s",
+                  animationDelay: "2s",
                 }}
               >
                 <h1 style={{ textTransform: "none" }}>
@@ -106,7 +106,7 @@ export const Hero = () => {
                 className="flex flex-row gap-5 mt-18 w-full items center"
                 style={{
                   ...AnimationA,
-                  animationDelay: "4s",
+                  animationDelay: "2.5s",
                 }}
               >
                 <Link

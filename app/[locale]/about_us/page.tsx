@@ -11,7 +11,7 @@ import { SectionSeparator } from "@/app/components/sectionSeparator";
 export default function Home() {
   return (
     <main className="justify-center items-center bg-black dark:bg-black font-sans">
-      <MediaQueryIndicator />
+      {/* <MediaQueryIndicator /> */}
       <AboutUsHero />
 
       <SectionSeparator />

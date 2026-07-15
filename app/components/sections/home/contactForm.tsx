@@ -471,7 +471,7 @@ const Form = () => {
       {isSubmitted && <SuccessMessage buttonAction={resetSubmit} />}
 
       {/* DEBUG WINDOW */}
-      {true && (
+      {false && (
         <p className={"text-green-500 relative flex flex-col gap-1 text-sm"}>
           <span> wrongField: {"" + wrongField} </span>
           <span> loading: {"" + loading} </span>
